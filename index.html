@@ -5,58 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <h1>Minhas redes sociais</h1>
     <h2>Quem sou?</h2>
-    <img src="imagens/minhafoto.png" alt="Minha foto." />
+    <img class="foto" src="imagens/minhafoto.png" alt="Minha foto." />
     <p>
       Oi. Me chamo <strong>Davson Melo</strong>. Sou gaúcho de Torres, Rio Grande do Sul. Sou Servidor público. Meu interesse por tecnologia vem desde sempre, apesar de nunca ter trabalhado na área. Mas a alguns meses resolvi aprender mais a fundo algumas linguagens de programação. Comecei estudando programação Mobile com Java, Utilizando as IDEs Eclipse e depois, Android Studio, Conseguindo fazer um pequeno aplicativo que era um Terço Digital. (Terço, de religião católica). Depois, para me aprofundar um pouco mais em Java, estudei um pouco de programação Java para Desktop, onde comecei também, a me inteirar sobre banco de Dados, mais precisamente, noSql, com o Google Firebase. E por fim, comecei a estudar, também por conta própria a linguagem Python, onde faço um curso on line do <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Curso em Vídeo</a>, concomitantemente com o aprendizado de <strong><em>HTML, CSS e JavaScript.</em></strong> O fruto deste rápido aprendizado é este pequeno portfólio que será incrementado ao longo do tempo.
     </p>
     <h2>Como falar comigo?</h2>
-    <ul>
-      <li>
-        <a
-          href="https://www.youtube.com/@davsonmelo"
-          target="_blank"
-          rel="external"
-          ><sub><img src="imagens/youtube.png" alt="Youtube" /></sub
-        ></a>
-        - Se inscreve lá no meu canal no YouTube
-      </li>
-      <li>
-        <a href="https://github.com/DavsonMelo" target="_blank" rel="external"
-          ><sub><img src="imagens/github.png" alt="Youtube" /></sub
-        ></a>
-        - Acessa meu repositório público no GitHub
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/davson_dev_python/"
-          target="_blank"
-          rel="external"
-          ><sub><img src="imagens/instagram.png" alt="Youtube" /></sub
-        ></a>
-        - Me segue lá no instagram
-      </li>
-      <li>
-        <a
-          href="https://www.twitter.com/DavsonDogeCoin"
-          target="_blank"
-          rel="external"
-          ><sub><img src="imagens/twitter.png" alt="Youtube" /></sub
-        ></a>
-        - Me segue lá no Twitter
-      </li>
-      <li>
-        <a
-          href="https://www.facebook.com/profile.php?id=100070003841314"
-          target="_blank"
-          rel="external"
-          ><sub><img src="imagens/facebook.png" alt="Youtube" /></sub
-        ></a>
-        - Me acompanha lá no facebook
-      </li>
-    </ul>
+
+    <div class="navigation">
+      <ul>
+          <li class="list">
+              <a href="https://www.youtube.com/@davsonmelo" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </span>
+                  <span class="text">Youtube</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="https://github.com/DavsonMelo" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </span>
+                  <span class="text">Github</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="https://www.instagram.com/davson_dev_python/" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </span>
+                  <span class="text">Instagram</span>
+              </a>
+          </li>
+          <li class="list active">
+              <a href="https://www.twitter.com/DavsonDogecoin" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </span>
+                  <span class="text">Twitter</span>
+              </a>
+          </li>
+          <li class="list">
+              <a href="https://www.facebook.com/profile.php?id=100070003841314" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </span>
+                  <span class="text">Facebook</span>
+              </a>
+          </li>
+          <div class="indicator"></div>
+      </ul>
+  </div>
+  <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink(){
+          list.forEach((item) => item.classList.remove('active'));
+          this.classList.add('active');
+      }
+      list.forEach((item) => item.addEventListener('click',activeLink));
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
   </body>
 </html>  <!-- DESAFIO COMPLETO -->
