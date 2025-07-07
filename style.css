@@ -29,8 +29,8 @@ body {
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 0 40px #ff2fbc55;
     border-radius: 0.5rem;
-    max-width: 95vw;
-    height: 95vh;
+    width: 90vw;
+    height: 90vh;
 
     overflow-y: auto;
 
