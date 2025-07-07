@@ -15,6 +15,7 @@ body {
     align-items: center;
     /* ou center se quiser no meio da tela */
     height: 100vh;
+    height: 100dvh;
     /* garante altura total da tela */
     /* espaçamento do topo */
 }
