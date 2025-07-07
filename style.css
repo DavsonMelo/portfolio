@@ -93,7 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 1.3rem;
+    margin-top: 2.3rem;
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     width: 310px;
     height: 260px;
     overflow: hidden;
@@ -468,7 +468,7 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     padding-inline: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
 }
 
 .cursos h2 {
