@@ -111,13 +111,16 @@ document.querySelectorAll('.sobre span').forEach(span => {
 
 class MeuHeader extends HTMLElement {
   connectedCallback() {
+    const repo = "/portfolio";
+    const base = window.location.pathname.startsWith(repo) ? repo : "";
+
     this.innerHTML = `
       <header >
         <nav class="menu">
-          <a href="../index.html">HomePage</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="projetos.html">Projetos</a>
-          <a href="contato.html">Contato</a>
+          <a href="${base}/index.html">HomePage</a>
+          <a href="${base}/pages/sobre.html">Sobre</a>
+          <a href="${base}/pages/projetos.html">Projetos</a>
+          <a href="${base}/pages/contato.html">Contato</a>
         </nav>
       </header>
     `;
