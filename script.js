@@ -108,3 +108,20 @@ document.querySelectorAll('.sobre span').forEach(span => {
     console.warn(`Skill não encontrada: "${texto}"`);
   }
 });
+
+class MeuHeader extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <header >
+        <nav class="menu">
+          <a href="../index.html">HomePage</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </header>
+    `;
+  }
+}
+
+customElements.define("meu-header", MeuHeader);

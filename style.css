@@ -86,6 +86,7 @@ body {
 
 .menu a:hover {
     opacity: 0.8;
+    text-decoration: none;
     /* deixa um pouco transparente */
 }
 
@@ -497,7 +498,7 @@ h2 a:hover {
 }
 
 .numero {
-    border: 2px solid #000;
+    border: 2px solid #425681;
     border-radius: 50%;
     padding: 0.5rem;
     width: 1.7rem;
@@ -507,6 +508,7 @@ h2 a:hover {
     justify-content: center;
     font-weight: bold;
     background-color: #f0f0f0;
+    color: #425681;
 }
 
 .sobre h1,
