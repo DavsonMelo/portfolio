@@ -1,105 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Portfólio de Davson Dev, desenvolvedor Front-End com projetos em HTML, CSS, JavaScript e muito mais."
+    />
+    <meta
+      name="keywords"
+      content="frontend, desenvolvimento web, HTML, CSS, JavaScript, portfólio, Davson Dev"
+    />
+    <meta name="author" content="Davson Melo" />
+    <title>Davson Dev | Front-End</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description"
-    content="Portfólio de Davson Dev, desenvolvedor Front-End com projetos em HTML, CSS, JavaScript e muito mais." />
-  <meta name="keywords" content="frontend, desenvolvimento web, HTML, CSS, JavaScript, portfólio, Davson Dev" />
-  <meta name="author" content="Davson Melo" />
-  <title>Davson Dev | Front-End</title>
-</head>
+  <body>
+    <main class="hero">
+      <!-- Cabeçalho -->
+      <meu-header class="header"></meu-header>
 
-<body>
+      <!-- Seção de Apresentação -->
+      <section class="titulo" aria-labelledby="titulo-principal">
+        <h1 id="titulo-principal">Front-End</h1>
+        <h2>Desenvolvimento</h2>
+        <p>
+          Desenvolvimento Front-End com foco em criar interfaces de usuário
+          responsivas e funcionais.
+        </p>
+      </section>
 
-  <main class="hero">
-    <!-- Cabeçalho -->
-    <meu-header class="header"></meu-header>
+      <!-- Seção Tecnologias/Vídeo/Graficos -->
+      <section class="tecno" aria-label="Demonstração de tecnologias">
+        <div class="lateral-B"></div>
+        <div class="lateral-A"></div>
 
-    <!-- Seção de Apresentação -->
-    <section class="titulo" aria-labelledby="titulo-principal">
-      <h1 id="titulo-principal">Front-End</h1>
-      <h2>Desenvolvimento</h2>
-      <p>Desenvolvimento Front-End com foco em criar interfaces de usuário responsivas e funcionais.</p>
-    </section>
+        <div class="reflexo-tela">
+          <div class="hero-tela">
+            <video
+              src="./videos/video.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+          </div>
 
-    <!-- Seção Tecnologias/Vídeo/Graficos -->
-    <section class="tecno" aria-label="Demonstração de tecnologias">
-      <div class="lateral-B"></div>
-      <div class="lateral-A"></div>
-
-      <div class="reflexo-tela">
-        <div class="hero-tela">
-          <video src="./videos/video.mp4" autoplay loop muted playsinline></video>
-          <h3>Lorem ipsum dolor sit amet.</h3>
-        </div>
-
-        <div class="grafico-barra">
-          <h3>Gráficos de desempenho</h3>
-          <div class="barras-container">
-            <div class="barra">
-              <div class="preenchimento"></div>
+          <div class="grafico-barra">
+            <h3>Gráficos de desempenho</h3>
+            <div class="barras-container">
+              <div class="barra">
+                <div class="preenchimento"></div>
+              </div>
+              <div class="barra">
+                <div class="preenchimento"></div>
+              </div>
+              <div class="barra">
+                <div class="preenchimento"></div>
+              </div>
+              <div class="barra">
+                <div class="preenchimento"></div>
+              </div>
             </div>
-            <div class="barra">
-              <div class="preenchimento"></div>
+          </div>
+
+          <div class="grafico-pizza">
+            <div class="pizza-container">
+              <div class="pizza"></div>
             </div>
-            <div class="barra">
-              <div class="preenchimento"></div>
-            </div>
-            <div class="barra">
-              <div class="preenchimento"></div>
-            </div>
+            <h3>Distribuição de habilidades</h3>
           </div>
         </div>
 
-        <div class="grafico-pizza">
-          <div class="pizza-container">
-            <div class="pizza"></div>
-          </div>
-          <h3>Distribuição de habilidades</h3>
+        <!-- Elementos decorativos -->
+        <div class="reflexo-A"></div>
+        <div class="celular">
+          <div class="tela"></div>
+          <div class="child-1"></div>
+          <div class="child-2"></div>
+          <div class="child-3"></div>
+          <div class="child-4"></div>
         </div>
-      </div>
+        <div class="sombra-A"></div>
+        <div class="sombra-B"></div>
+        <div class="sombra"></div>
+      </section>
 
-      <!-- Elementos decorativos -->
-      <div class="reflexo-A"></div>
-      <div class="celular">
-        <div class="tela"></div>
-        <div class="child-1"></div>
-        <div class="child-2"></div>
-        <div class="child-3"></div>
-        <div class="child-4"></div>
-      </div>
-      <div class="sombra-A"></div>
-      <div class="sombra-B"></div>
-      <div class="sombra"></div>
-    </section>
+      <!-- Seção de Cursos -->
+      <section class="cursos" aria-label="Conteúdos recomendados">
+        <div class="linha">
+          <div class="numero">1</div>
+          <h2><a href="#cursos">Cursos que eu indico</a></h2>
+        </div>
+        <div class="linha">
+          <div class="numero">2</div>
+          <h2><a href="#videos">Vídeos e canais que eu recomendo</a></h2>
+        </div>
+        <div class="linha">
+          <div class="numero">3</div>
+          <h2><a href="#site">Sobre esse site</a></h2>
+        </div>
+      </section>
+    </main>
 
-    <!-- Seção de Cursos -->
-    <section class="cursos" aria-label="Conteúdos recomendados">
-      <div class="linha">
-        <div class="numero">1</div>
-        <h2><a href="#cursos">Cursos que eu indico (teste)</a></h2>
-      </div>
-      <div class="linha">
-        <div class="numero">2</div>
-        <h2><a href="#videos">Vídeos e canais que eu recomendo</a></h2>
-      </div>
-      <div class="linha">
-        <div class="numero">3</div>
-        <h2><a href="#site">Sobre esse site</a></h2>
-      </div>
-    </section>
+    <!-- Rodapé (mesmo vazio, pra estrutura) -->
+    <footer>
+      <!-- Aqui futuramente: redes sociais, copyright etc. -->
+    </footer>
 
-  </main>
-
-  <!-- Rodapé (mesmo vazio, pra estrutura) -->
-  <footer>
-    <!-- Aqui futuramente: redes sociais, copyright etc. -->
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
