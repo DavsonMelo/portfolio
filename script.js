@@ -126,5 +126,24 @@ class MeuHeader extends HTMLElement {
     `;
   }
 }
-
 customElements.define("meu-header", MeuHeader);
+
+function ajustarEscala() {
+  const container = document.querySelector('.tecno');
+  const inner = document.querySelector('.tecno-inner');
+
+  const baseWidth = 220;
+  const baseHeight = 220;
+
+  const scaleX = container.clientWidth / baseWidth;
+  const scaleY = container.clientHeight / baseHeight;
+
+  // Pega o menor para manter proporção
+  const scale = Math.min(scaleX, scaleY);
+
+  inner.style.setProperty('--scale-factor', scale);
+}
+
+window.addEventListener('resize', ajustarEscala);
+window.addEventListener('load', ajustarEscala);
+

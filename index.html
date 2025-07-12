@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
     <meta
       name="description"
       content="Portfólio de Davson Dev, desenvolvedor Front-End com projetos em HTML, CSS, JavaScript e muito mais."
@@ -17,76 +18,75 @@
   </head>
 
   <body>
-    <main class="hero">
-      <!-- Cabeçalho -->
-      <meu-header class="header"></meu-header>
+    <!-- Cabeçalho -->
+    <meu-header class="header"></meu-header>
 
-      <!-- Seção de Apresentação -->
+    <main class="hero">
+      <!-- secção classe: titulo. Contém titulo, subtitulo e -->
+      <!-- contém também o texto explicativo - filho da classe -->
       <section class="titulo" aria-labelledby="titulo-principal">
         <h1 id="titulo-principal">Front-End</h1>
-        <h2>Desenvolvimento</h2>
+        <h2 id="subtitulo-principal">Desenvolvimento</h2>
+      </section>
+      <div class="txt-img">
         <p>
-          Desenvolvimento Front-End com foco em criar interfaces de usuário
+          Desenvolvimento Front - End com foco em criar interfaces de usuário
           responsivas e funcionais.
         </p>
-      </section>
-
-      <!-- Seção Tecnologias/Vídeo/Graficos -->
-      <section class="tecno" aria-label="Demonstração de tecnologias">
-        <div class="lateral-B"></div>
-        <div class="lateral-A"></div>
-
-        <div class="reflexo-tela">
-          <div class="hero-tela">
-            <video
-              src="./videos/video.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-            <h3>Lorem ipsum dolor sit amet.</h3>
-          </div>
-
-          <div class="grafico-barra">
-            <h3>Gráficos de desempenho</h3>
-            <div class="barras-container">
-              <div class="barra">
-                <div class="preenchimento"></div>
-              </div>
-              <div class="barra">
-                <div class="preenchimento"></div>
-              </div>
-              <div class="barra">
-                <div class="preenchimento"></div>
-              </div>
-              <div class="barra">
-                <div class="preenchimento"></div>
+        <!-- Seção Tecnologias/Vídeo/Graficos. Sua estilização está -->
+        <!-- em style-mobile -->
+        <section class="tecno" aria-label="Demonstração de tecnologias">
+          <div class="lateral-B"></div>
+          <div class="lateral-A"></div>
+          <div class="reflexo-tela">
+            <div class="hero-tela">
+              <video
+                src="./videos/video.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+            </div>
+            <div class="grafico-barra">
+              <h3>Gráficos de desempenho</h3>
+              <div class="barras-container">
+                <div class="barra">
+                  <div class="preenchimento"></div>
+                </div>
+                <div class="barra">
+                  <div class="preenchimento"></div>
+                </div>
+                <div class="barra">
+                  <div class="preenchimento"></div>
+                </div>
+                <div class="barra">
+                  <div class="preenchimento"></div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="grafico-pizza">
-            <div class="pizza-container">
-              <div class="pizza"></div>
+            <div class="grafico-pizza">
+              <div class="pizza-container">
+                <div class="pizza"></div>
+              </div>
+              <h3>Distribuição de habilidades</h3>
             </div>
-            <h3>Distribuição de habilidades</h3>
           </div>
-        </div>
-
-        <!-- Elementos decorativos -->
-        <div class="reflexo-A"></div>
-        <div class="celular">
-          <div class="tela"></div>
-          <div class="child-1"></div>
-          <div class="child-2"></div>
-          <div class="child-3"></div>
-          <div class="child-4"></div>
-        </div>
-        <div class="sombra-A"></div>
-        <div class="sombra-B"></div>
-        <div class="sombra"></div>
-      </section>
+          <!-- Elementos decorativos -->
+          <div class="reflexo-A"></div>
+          <div class="celular">
+            <div class="tela"></div>
+            <div class="child-1"></div>
+            <div class="child-2"></div>
+            <div class="child-3"></div>
+            <div class="child-4"></div>
+          </div>
+          <div class="sombra-A"></div>
+          <div class="sombra-B"></div>
+          <div class="sombra"></div>
+        </section>
+      </div>
 
       <!-- Seção de Cursos -->
       <section class="cursos" aria-label="Conteúdos recomendados">
