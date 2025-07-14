@@ -120,7 +120,6 @@ class MeuHeader extends HTMLElement {
           <a href="${base}/index.html">HomePage</a>
           <a href="${base}/pages/sobre.html">Sobre</a>
           <a href="${base}/pages/projetos.html">Projetos</a>
-          <a href="${base}/pages/contato.html">Contato</a>
         </nav>
       </header>
     `;
@@ -128,22 +127,28 @@ class MeuHeader extends HTMLElement {
 }
 customElements.define("meu-header", MeuHeader);
 
-function ajustarEscala() {
-  const container = document.querySelector('.tecno');
-  const inner = document.querySelector('.tecno-inner');
 
-  const baseWidth = 220;
-  const baseHeight = 220;
+class MeuFooter extends HTMLElement {
+  connectedCallback() {
+    const repo = "/portfolio";
+    const base = window.location.pathname.startsWith(repo) ? repo : "";
 
-  const scaleX = container.clientWidth / baseWidth;
-  const scaleY = container.clientHeight / baseHeight;
-
-  // Pega o menor para manter proporção
-  const scale = Math.min(scaleX, scaleY);
-
-  inner.style.setProperty('--scale-factor', scale);
+    this.innerHTML = `
+      <footer>
+        <nav class="social">
+          <a href="https://www.instagram.com/davson_frontend/" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="${base}/imagens/instagramIcon.png" alt="Logo do Instagram">
+          </a>
+          <a href="https://github.com/DavsonMelo" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="${base}/imagens/githubicon.png" alt="Logo do GitHub">
+          </a>
+          <a href="https://wa.me/5547984952412" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <img src="${base}/imagens/whatsappicon.png" alt="Logo do WhatsApp">
+          </a>
+        </nav>
+      </footer>
+    `;
+  }
 }
-
-window.addEventListener('resize', ajustarEscala);
-window.addEventListener('load', ajustarEscala);
+customElements.define("meu-footer", MeuFooter);
 
